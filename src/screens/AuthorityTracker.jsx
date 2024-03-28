@@ -1,5 +1,5 @@
 import React from 'react'
-import './HPTracker.scss'
+import './AuthorityTracker.scss'
 
 
 export default function HPTracker() {
