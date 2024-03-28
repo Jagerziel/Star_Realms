@@ -10,10 +10,10 @@ export default function Dashboard() {
   return (
     <div className='dashboard-container'>
       <div className='dashboard-left-container'>
-  
+        <TrackerMain />
       </div>
       <div className='dashboard-right-container'>
-
+        
       </div>
     </div>
   )

@@ -3,6 +3,6 @@ import './TrackerMain.scss'
 
 export default function TrackerMain() {
   return (
-    <div>TrackerMain</div>
+    <div className='trackermain-component'>TrackerMain</div>
   )
 }
