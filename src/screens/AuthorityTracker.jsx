@@ -14,7 +14,7 @@ export default function AuthorityTracker() {
   })
   
   // Size of Window
-  const [size, setSize] = useState({
+  const [ size, setSize ] = useState({
     x: window.innerWidth,
     y: window.innerHeight
   })
@@ -71,7 +71,12 @@ export default function AuthorityTracker() {
 
   return (
     <div className='authoritytracker-container'>
-      <div className='authoritytracker-subcontainer'>
+      <div 
+        className='authoritytracker-subcontainer'
+        style={{
+          padding: `10px 5px 10px 10px`
+        }}
+      >
         <TrackerSub 
           windowMod={windowMod} 
           title={info[0].title}
@@ -85,7 +90,12 @@ export default function AuthorityTracker() {
           resetVal={info[2].resetVal}
         />
       </div>
-      <div className='authoritytracker-subcontainer'>
+      <div 
+        className='authoritytracker-subcontainer'
+        style={{
+          padding: `10px 10px 10px 5px`
+        }}
+      >
         <TrackerSub 
           windowMod={windowMod} 
           title={info[1].title}
