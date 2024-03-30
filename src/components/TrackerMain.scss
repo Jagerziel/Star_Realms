@@ -49,6 +49,25 @@
     }
 }
 
+.trackermain-button2 {
+    border: black;
+    background: white;
+    border-radius: 15px;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    &:hover {
+        cursor: pointer;
+    }
+    &:active {
+        background: rgba(0, 0, 0, 0.343);
+        color: white;
+    }
+}
+
 .trackermain-button-text {
     // border: 1px solid red;
 }
