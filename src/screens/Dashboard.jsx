@@ -18,6 +18,19 @@ export default function Dashboard() {
     y: window.innerHeight
   })
   
+  const info = [
+    {
+      title: "Trade",
+      theme: "rgb(0, 255, 115)",
+      resetVal: 0,
+    },
+    {
+      title: "Attack",
+      theme: "rgb(0, 255, 115)",
+      resetVal: 0,
+    },
+  ]
+
   // Update size object when window is resized
   function updateSize () {
     setSize({
@@ -55,7 +68,15 @@ export default function Dashboard() {
         <TrackerMain windowMod={windowMod} />
       </div>
       <div className='dashboard-right-container'>
+        <TrackerSub 
+          windowMod={windowMod} 
+
+        />
         
+        <TrackerSub 
+          windowMod={windowMod} 
+
+        />
       </div>
     </div>
   )
