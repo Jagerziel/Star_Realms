@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react'
 // Import Component
 import TrackerMain from '../components/TrackerMain.jsx'
 import TrackerSub from '../components/TrackerSub.jsx'
+
 // Import SCSS
 import './Dashboard.scss'
 
@@ -74,7 +75,6 @@ export default function Dashboard() {
           theme={info[0].theme}
           resetVal={info[0].resetVal}
         />
-
         <TrackerSub 
           windowMod={windowMod} 
           title={info[1].title}
