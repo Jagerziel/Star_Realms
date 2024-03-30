@@ -9,6 +9,46 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 4%;
 }
 
+.trackermain-subcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.trackermain-button-container {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+
+.trackermain-button {
+    border: black;
+    background: white;
+    border-radius: 50%;
+    height: 100%;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    &:hover {
+        cursor: pointer;
+    }
+    &:active {
+        background: rgba(0, 0, 0, 0.343);
+        color: white;
+    }
+}
+
+.trackermain-button-text {
+    // border: 1px solid red;
+}
