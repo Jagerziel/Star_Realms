@@ -25,7 +25,7 @@ export default function Dashboard() {
       resetVal: 0,
     },
     {
-      title: "Attack",
+      title: "Combat",
       theme: "rgb(255, 70, 70)",
       resetVal: 0,
     },

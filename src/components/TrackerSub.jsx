@@ -6,7 +6,7 @@ export default function TrackerSub({ windowMod, title, theme, resetVal }) {
 
   let fontMod = ((windowMod.x + windowMod.y) / 2);
 
-  console.log(value);
+  // console.log(value);
 
   return (
     <div className="trackersub-container"
