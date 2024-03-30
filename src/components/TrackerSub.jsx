@@ -1,22 +1,26 @@
 import React, { useState } from "react";
 import "./TrackerSub.scss";
 
-export default function TrackerSub({ windowMod }) {
-  const [value, setValue] = useState(50);
+export default function TrackerSub({ windowMod, title, theme, resetVal }) {
+  const [value, setValue] = useState(resetVal);
 
   let fontMod = ((windowMod.x + windowMod.y) / 2);
 
   console.log(value);
 
   return (
-    <div className="trackersub-container">
+    <div className="trackersub-container"
+      style={{
+            border: `3px solid ${theme}`,
+          }}
+    >
       <div
         className="trackersub-title"
         style={{
           fontSize: 40 * fontMod,
         }}
       >
-        Authority
+        {title}
       </div>
       <div className="trackersub-subcontainer">
         <input
@@ -31,7 +35,7 @@ export default function TrackerSub({ windowMod }) {
             height: 40 * fontMod,
             width: "80%",
             fontSize: 40 * fontMod,
-            border: "2px solid rgb(0, 255, 115)",
+            border: `2px solid ${theme}`,
           }}
         />
         <div
@@ -45,8 +49,7 @@ export default function TrackerSub({ windowMod }) {
           <div
             className="trackersub-button"
             onClick={() => {
-              let newVal = isNaN(parseInt(value)) ? 0 : parseInt(value) + 1;
-              setValue(newVal);
+              setValue(prev => isNaN(parseInt(prev)) ? 0 : parseInt(prev) + 1);
             }}
           >
             <div
@@ -62,8 +65,7 @@ export default function TrackerSub({ windowMod }) {
           <div
             className="trackersub-button"
             onClick={() => {
-              let newVal = isNaN(parseInt(value)) ? 0 : parseInt(value) - 1;
-              setValue(newVal);
+              setValue(prev => isNaN(parseInt(prev)) ? 0 : parseInt(prev) - 1);
             }}
           >
             <div
@@ -79,8 +81,7 @@ export default function TrackerSub({ windowMod }) {
           <div
             className="trackersub-button2"
             onClick={() => {
-              let newVal = 50;
-              setValue(newVal);
+              setValue(resetVal);
             }}
           >
             <div

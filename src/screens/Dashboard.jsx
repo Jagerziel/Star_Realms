@@ -21,12 +21,12 @@ export default function Dashboard() {
   const info = [
     {
       title: "Trade",
-      theme: "rgb(0, 255, 115)",
+      theme: "rgb(255, 255, 115)",
       resetVal: 0,
     },
     {
       title: "Attack",
-      theme: "rgb(0, 255, 115)",
+      theme: "rgb(255, 70, 70)",
       resetVal: 0,
     },
   ]
@@ -70,12 +70,16 @@ export default function Dashboard() {
       <div className='dashboard-right-container'>
         <TrackerSub 
           windowMod={windowMod} 
-
+          title={info[0].title}
+          theme={info[0].theme}
+          resetVal={info[0].resetVal}
         />
-        
+
         <TrackerSub 
           windowMod={windowMod} 
-
+          title={info[1].title}
+          theme={info[1].theme}
+          resetVal={info[1].resetVal}
         />
       </div>
     </div>
