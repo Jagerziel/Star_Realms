@@ -48,28 +48,57 @@ export default function AuthorityTracker() {
       
   const info = [
     {
-      title: "Player 1",
+      title: "Player 1: Authority",
       theme: "rgb(0, 255, 115)",
-      resetVal: 30,
+      resetVal: 50,
     },
     {
-      title: "Player 2",
+      title: "Player 2: Authority",
       theme: "rgb(0, 255, 115)",
-      resetVal: 30,
+      resetVal: 50,
     },
     {
-      title: "Player 3",
+      title: "Player 3: Authority",
       theme: "rgb(0, 255, 115)",
-      resetVal: 30,
+      resetVal: 50,
     },
     {
-      title: "Player 4",
+      title: "Player 4: Authority",
       theme: "rgb(0, 255, 115)",
-      resetVal: 30,
+      resetVal: 50,
     },
   ]
 
   return (
-    <div>Authority Tracker</div>
+    <div className='dashboard-container'>
+      <div className='dashboard-right-container'>
+        <TrackerSub 
+          windowMod={windowMod} 
+          title={info[0].title}
+          theme={info[0].theme}
+          resetVal={info[0].resetVal}
+        />
+        <TrackerSub 
+          windowMod={windowMod} 
+          title={info[2].title}
+          theme={info[2].theme}
+          resetVal={info[2].resetVal}
+        />
+      </div>
+      <div className='dashboard-right-container'>
+        <TrackerSub 
+          windowMod={windowMod} 
+          title={info[1].title}
+          theme={info[1].theme}
+          resetVal={info[1].resetVal}
+        />
+        <TrackerSub 
+          windowMod={windowMod} 
+          title={info[3].title}
+          theme={info[3].theme}
+          resetVal={info[3].resetVal}
+        />
+      </div>
+    </div>
   )
 }
