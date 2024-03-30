@@ -70,8 +70,8 @@ export default function AuthorityTracker() {
   ]
 
   return (
-    <div className='dashboard-container'>
-      <div className='dashboard-right-container'>
+    <div className='authoritytracker-container'>
+      <div className='authoritytracker-subcontainer'>
         <TrackerSub 
           windowMod={windowMod} 
           title={info[0].title}
@@ -85,7 +85,7 @@ export default function AuthorityTracker() {
           resetVal={info[2].resetVal}
         />
       </div>
-      <div className='dashboard-right-container'>
+      <div className='authoritytracker-subcontainer'>
         <TrackerSub 
           windowMod={windowMod} 
           title={info[1].title}
