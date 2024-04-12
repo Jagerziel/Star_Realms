@@ -2,6 +2,8 @@
 
 My cousin is into the card game Star Realms.  The game has a few things that require tracking on each player's turn so I built him a tracker so he can track Authority (aka Hitpoints), Trade (aka Gold), and Combat (aka Attack)
 
+Deploy site: https://star-realms.netlify.app/
+
 ## Technical Notes
 
 ### Screen Responsiveness
